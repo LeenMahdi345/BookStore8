@@ -1,0 +1,70 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-BookStore-e6ce1322-cf8a-4d2e-943a-f078912d7ace</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\NewFolder1\**" />
+    <Content Remove="wwwroot\NewFolder1\**" />
+    <EmbeddedResource Remove="wwwroot\NewFolder1\**" />
+    <None Remove="wwwroot\NewFolder1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Dashboard\dist\css\adminlte.css.map" />
+    <None Include="wwwroot\Dashboard\dist\css\adminlte.min.css.map" />
+    <None Include="wwwroot\Dashboard\dist\css\alt\adminlte.components.css.map" />
+    <None Include="wwwroot\Dashboard\dist\css\alt\adminlte.components.min.css.map" />
+    <None Include="wwwroot\Dashboard\dist\css\alt\adminlte.core.css.map" />
+    <None Include="wwwroot\Dashboard\dist\css\alt\adminlte.core.min.css.map" />
+    <None Include="wwwroot\Dashboard\dist\css\alt\adminlte.extra-components.css.map" />
+    <None Include="wwwroot\Dashboard\dist\css\alt\adminlte.extra-components.min.css.map" />
+    <None Include="wwwroot\Dashboard\dist\css\alt\adminlte.light.css.map" />
+    <None Include="wwwroot\Dashboard\dist\css\alt\adminlte.light.min.css.map" />
+    <None Include="wwwroot\Dashboard\dist\css\alt\adminlte.pages.css.map" />
+    <None Include="wwwroot\Dashboard\dist\css\alt\adminlte.pages.min.css.map" />
+    <None Include="wwwroot\Dashboard\dist\css\alt\adminlte.plugins.css.map" />
+    <None Include="wwwroot\Dashboard\dist\css\alt\adminlte.plugins.min.css.map" />
+    <None Include="wwwroot\Dashboard\dist\js\adminlte.js" />
+    <None Include="wwwroot\Dashboard\dist\js\adminlte.js.map" />
+    <None Include="wwwroot\Dashboard\dist\js\adminlte.min.js" />
+    <None Include="wwwroot\Dashboard\dist\js\adminlte.min.js.map" />
+    <None Include="wwwroot\Dashboard\dist\js\demo.js" />
+    <None Include="wwwroot\Dashboard\dist\js\pages\dashboard.js" />
+    <None Include="wwwroot\Dashboard\dist\js\pages\dashboard2.js" />
+    <None Include="wwwroot\Dashboard\dist\js\pages\dashboard3.js" />
+    <None Include="wwwroot\Dashboard\plugins\bootstrap\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\Dashboard\plugins\bootstrap\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\Dashboard\plugins\bootstrap\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\Dashboard\plugins\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\Dashboard\plugins\bootstrap\js\bootstrap.js" />
+    <None Include="wwwroot\Dashboard\plugins\bootstrap\js\bootstrap.js.map" />
+    <None Include="wwwroot\Dashboard\plugins\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\Dashboard\plugins\bootstrap\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\Dashboard\plugins\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <None Include="wwwroot\Dashboard\plugins\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\Dashboard\plugins\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <None Include="wwwroot\Dashboard\plugins\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\Dashboard\plugins\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <None Include="wwwroot\Dashboard\plugins\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <None Include="wwwroot\Dashboard\plugins\jquery\jquery.js" />
+    <None Include="wwwroot\Dashboard\plugins\jquery\jquery.min.js" />
+    <None Include="wwwroot\Dashboard\plugins\jquery\jquery.min.map" />
+    <None Include="wwwroot\Dashboard\plugins\jquery\jquery.slim.js" />
+    <None Include="wwwroot\Dashboard\plugins\jquery\jquery.slim.min.js" />
+    <None Include="wwwroot\Dashboard\plugins\jquery\jquery.slim.min.map" />
+  </ItemGroup>
+
+</Project>
