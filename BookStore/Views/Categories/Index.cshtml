@@ -1,15 +1,29 @@
 ﻿@model List<Category>
+@section Title{category}
+@section subTitle{
+show
+}
+@section Buttons{
+
+	<div class="card-body">
+	<a asp-controller="categories" asp-action="Create" class="btn-primary justify-content-between align-items-center">Create</a>
+	</div>
+}
 
 	@if(!Model.Any()){
 
 		<h2>failed no data</h2>
 
-	}else{
+	}
+ 
+else{
+		       <div class="card-body">
 		<table class="table table-bordered">
 	<thead>
 		<tr>
 			<th style="width: 10px">#</th>
 			<th>Name</th>
+	<th>Edit</th>
 		</tr>
 	</thead>
 		<tbody> 
@@ -17,10 +31,20 @@
 	{
 		<tr>
 			<td>@item.Id</td>
-			<td>@item.Name</td>
-		</tr>}
+						<td>@item.Name</td>
+						<td> <a asp-controller="Categories" asp-action="Edit" asp-route-id="@item.Id"> Edit </a>
+
+							<a asp-controller="Categories" asp-action="Details" asp-route-id="@item.Id"> Details </a>
+							<a asp-controller="Categories" asp-action="Delete" asp-route-id="@item.Id"> Delete </a>
+						
+						</td>
+					</tr>
+				}
+						
 
 		</tbody>
 	
 
-</table>}
+</table>
+
+</div>}

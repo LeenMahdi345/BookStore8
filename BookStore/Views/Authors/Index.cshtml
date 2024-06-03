@@ -1,0 +1,59 @@
+﻿@using BookStore.ViewModel
+@model List<AuthorVM>
+
+
+	@section Title{
+Author
+}
+	@section subTitle{
+	show 2
+	}
+	@section Buttons{
+
+		<div class="card-body">
+		<a asp-controller="Authors" asp-action="Create" class="btn-primary justify-content-between align-items-center">Create</a>
+		</div>
+	}
+
+	@if (!Model.Any())
+	{
+
+		<h2>failed no data</h2>
+
+	}
+
+	else
+	{
+		<div class="card-body">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th style="width: 10px">#</th>
+						<th>Name</th>
+						<th>Edit</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach (var item in Model)
+					{
+						<tr>
+							<td>@item.Id</td>
+							<td>@item.Name</td>
+							<td>
+								<a asp-controller="Authors" asp-action="Edit" asp-route-id="@item.Id"> Edit </a>
+
+							<a asp-controller="Authors" asp-action="Details" asp-route-id="@item.Id"> Details </a>
+							<a asp-controller="Authors" asp-action="Delete" asp-route-id="@item.Id"> Delete </a>
+
+							</td>
+						</tr>
+					}
+
+
+				</tbody>
+
+
+			</table>
+
+		</div>
+	}

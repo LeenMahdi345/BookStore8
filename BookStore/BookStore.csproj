@@ -67,4 +67,8 @@
     <None Include="wwwroot\Dashboard\plugins\jquery\jquery.slim.min.map" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\img\Book\" />
+  </ItemGroup>
+
 </Project>
